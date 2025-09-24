@@ -1,0 +1,59 @@
+td{
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
+
+.row1 td{
+    background-color: green;
+}
+
+.row2 td{
+    background-color: lightgreen;
+}
+
+.row3 td{
+    background-color: red;
+}
+
+.row4 td{
+    background-color: yellow;
+}
+
+.row5 td{
+    background-color: skyblue;
+}
+
+.row6 td{
+    background-color: red;
+}
+
+.row7 td{
+    background-color: blue;
+}
+
+.row8 td{
+    background-color: lightblue;
+}
+
+.row2 .row-text{
+    height: 60px;
+}
+
+.row6 .row-text{
+    height: 100px;
+}
+
+.row8 .row-text{
+    height: 100px;
+}
+
+table, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.row-text{
+    text-align: left;
+    width: 75px;
+}

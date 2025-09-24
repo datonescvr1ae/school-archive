@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding: 20px;
+
+    width: 320px;
+
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 300px;
+    height: 20px;
+
+    padding: 10px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.black-button{
+    background-color: black;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    width: 325px;
+    height: 50px;
+}
+
+#wynik{
+    margin-top: 20px;
+    font-weight: bold;
+}
