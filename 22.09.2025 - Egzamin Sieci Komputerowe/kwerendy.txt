@@ -1,0 +1,7 @@
+1. select nazwa, ilosc, producenci.nazwaProd from materialy join producenci on materialy.Producenci_id = producenci.id;
+
+2. select nazwa, producenci.nazwaProd, jednostki.nazwaJedn from materialy join producenci on materialy.Producenci_id = producenci.id join jednostki on materialy.Jednostki_id = jednostki.id
+
+3. create user 'zaopatrzenie'@'localhost' identified by 'Z@op@trzenie';
+
+4. grant select, update, insert, delete on firma.* to 'zaopatrzenie'@'localhost';

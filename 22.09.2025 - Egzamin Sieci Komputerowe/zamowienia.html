@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Zamówienia hurtowe</title>
+        <link rel="stylesheet" href="styl4.css">
+    </head>
+
+    <body>
+        <section class="baner">
+            <h1>Sieci komputerowe</h1>
+        </section>
+
+        <div class="flex-row">
+            <section class="blok-lewy">
+                <h2>Aktualizacja i zamówienia materiałów</h2>
+                <p>Do wewnętrznego użytku firmy</p>
+                <img src="obraz.png" alt="sieć komputerowa" height="500px">
+            </section>
+
+            <section class="blok-prawy">
+                <table>
+                    <tr class="naglowek-tabela">
+                        <td>Produkt</td>
+                        <td>Jednostka</td>
+                        <td>Dostępna ilość</td>
+                        <td>Aktualizacja</td>
+                        <td>Zamówienie</td>
+                    </tr>
+                    <tr class="tresc-tabela">
+                        <td id="produkt1">Skrętka U/UTP drut</td>
+                        <td>metr</td>
+                        <td id="ilosc1">20</td>
+                        <td><input type="button" id="update1" value="Aktualizuj"></td>
+                        <td><input type="button" id="order1" value="Zamów"></td>
+                    </tr>
+                    <tr class="tresc-tabela">
+                        <td id="produkt2">Skrętka U/UTP linka</td>
+                        <td>metr</td>
+                        <td id="ilosc2">2</td>
+                        <td><input type="button" id="update2" value="Aktualizuj"></td>
+                        <td><input type="button" id="order2" value="Zamów"></td>
+                    </tr>
+                    <tr class="tresc-tabela">
+                        <td id="produkt3">Wtyki 8P8C</td>
+                        <td>sztuki</td>
+                        <td id="ilosc3">10</td>
+                        <td><input type="button" id="update3" value="Aktualizuj"></td>
+                        <td><input type="button" id="order3" value="Zamów"></td>
+                    </tr>
+                    <tr class="tresc-tabela">
+                        <td id="produkt4">Moduły Keystone</td>
+                        <td>sztuki</td>
+                        <td id="ilosc4">30</td>
+                        <td><input type="button" id="update4" value="Aktualizuj"></td>
+                        <td><input type="button" id="order4" value="Zamów"></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <section class="stopka">
+            <a href="http://sieci.pl/">Nasza strona internetowa</a>
+            <p>Stronę przygotował: Mateusz Cieśliński</p>
+        </section>
+
+        <script>
+            let idZamowienia = 0;
+
+            function onStart() {
+                for (let i = 0; i < 4; i++) {
+                    const ilosc = document.getElementById(`ilosc${i + 1}`);
+                    const iloscNum = parseInt(ilosc.innerHTML);
+
+                    if (iloscNum == 0) {
+                        ilosc.style.backgroundColor = "red";
+
+                    } else if (iloscNum >= 1 && iloscNum <= 5) {
+                        ilosc.style.backgroundColor = "yellow";
+                    } else {
+                        ilosc.style.backgroundColor = "honeydew";
+                    }
+                }
+            }
+
+            function onUpdateClicked(num) {
+                const value = prompt("Podaj nową ilość:");
+                const ilosc = document.getElementById(`ilosc${num}`);
+                ilosc.innerHTML = value;
+
+                onStart();
+            }
+
+            function onOrderClicked(num) {
+                const product = document.getElementById(`produkt${num}`);
+                idZamowienia++
+
+                alert(`Zamówienie nr: ${idZamowienia} Produkt: ${product.innerHTML}`);
+            }
+
+            for (let i = 0; i < 4; i++) {
+                const updateButton = document.getElementById(`update${i + 1}`);
+                const orderButton = document.getElementById(`order${i + 1}`);
+
+                updateButton.addEventListener("click", function() {
+                    onUpdateClicked(i + 1);
+                });
+
+                orderButton.addEventListener("click", function() {
+                    onOrderClicked(i + 1);
+                });
+            }
+            
+            onStart();
+        </script>
+    </body>
+</html>
