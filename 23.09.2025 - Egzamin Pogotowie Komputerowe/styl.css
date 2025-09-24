@@ -1,0 +1,57 @@
+body{
+    background-color: #99FFCC;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+.baner{
+    background-color: #99FF66;
+    height: 200px;
+}
+
+.menu{
+    background-color: #66CCFF;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.glowny-lewy, .glowny-srodek, .glowny-prawy{
+    width: 310px;
+    padding: 10px;
+}
+
+.stopka{
+    background-color: #66CCFF;
+    color: #006666;
+    padding: 20px;
+    font-size: 200%;
+    text-decoration: none;
+    text-align: right;
+}
+
+a{
+    background-color: #66CCFF;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+#resetuj{
+    background-color: #FF0000;
+}
+
+#przeslij{
+    background-color: #00FF00;
+}
