@@ -1,0 +1,7 @@
+1. select distinct imie from dane where imie like "%a"
+
+2. select imie, count(*) as liczba from dane where imie not like "%a" group by imie order by liczba desc limit 5
+
+3. select imie, count(*) as liczba from dane join wojewodztwa on dane.id_woj = wojewodztwa.id group by imie order by liczba desc limit 1
+
+4. select distinct imie from dane where length(imie) = 3

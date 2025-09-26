@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Neon</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="baner">
+            <img src="baner.png" alt="grafika z logiem">
+        </div>
+
+        <div class="blok-gorny">
+            <p id="neon">Egzamin</p>
+        </div>
+
+        <div class="flex-row">
+            <div class="blok-lewy">
+                <label for="tresc">Treść neonu</label> <br>
+                <input type="text" maxlength="10" name="tresc" id="tresc"> <br>
+
+                <button type="button" id="zastosuj">Zastosuj</button>
+            </div>
+
+            <div class="blok-srodkowy">
+                <label for="kolor">Kolor neonu</label> <br>
+                <label for="red">R</label>
+                <input type="range" min="0" max="255" value="255" name="red" class="range-input" id="red-range"> <br>
+
+                <label for="green">G</label>
+                <input type="range" min="0" max="255" value="0" name="green" class="range-input" id="green-range"> <br>
+
+                <label for="blue">B</label>
+                <input type="range" min="0" max="255" value="0" name="blue" class="range-input" id="blue-range">
+            </div>
+
+            <div class="blok-prawy">
+                <label for="rozmiar">Rozmiar neonu</label> <br>
+                <input type="number" min="0" max="300" value="100" step="5" name="rozmiar" id="rozmiar">
+            </div>
+        </div>
+
+        <div class="stopka">
+            <p><a href="style.css" target="_blank">Otwórz plik ze stylami css</a></p>
+            <p>Stronę wykonał: Mateusz Cieśliński</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
