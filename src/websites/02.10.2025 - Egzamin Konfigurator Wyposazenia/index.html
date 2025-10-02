@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Konfigurator wyposazenia</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+
+    <body>
+        <section class="sekcja-glowna">
+            <section class="baner">
+                <img src="baner.jpg" alt="baner">
+            </section>
+
+            <section class="flex-row">
+                <section class="panel-lewy">
+                    <form>
+                        <hr> <h2>Kolor</h2>
+                        <select id="kolor-input">
+                            <option value="szary">szary</option>
+                            <option value="niebieski">niebieski</option>
+                            <option value="czerwony">czerwony</option>
+                            <option value="zolty">zolty</option>
+                            <option value="zielony">zielony</option>
+                        </select>
+
+                        <hr> <h2>Felgi</h2>
+                        Stalowe <input type="radio" name="felgi" id="stalowe" checked> <br>
+                        Aluminiowe <input type="radio" name="felgi" id="aluminiowe">
+
+                        <hr> <h2>Doposazenie</h2>
+                        Czujniki parkowania <input type="checkbox" id="czujniki"> <br>
+                        Climatronic <input type="checkbox" id="climatronic"> <br>
+                        Nawigacja <input type="checkbox" id="nawigacja"> <hr>
+                    </form>
+                </section>
+
+                <section class="panel-prawy">
+                    <h1>Twoj samochod</h1>
+                    <img src="szary.png" alt="foto" class="foto" id="foto">
+
+                    <h1 class="wycena-tekst">Wycena</h1>
+                    <p class="cena-bazowa" id="wycena">Cena bazowa: 75000 zl</p> <hr>
+                    <p id="cena-razem">RAZEM: 75000 zl</p>
+                </section>
+            </section>
+
+            <section class="stopka">
+                <p>Autor strony: <i>Mateusz Cieśliński</i></p>
+            </section>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

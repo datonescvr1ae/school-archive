@@ -1,0 +1,66 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    font-family: Verdana;
+    background-color: #7D7F85;
+}
+
+.sekcja-glowna{
+    width: 800px;
+    margin: auto;
+}
+
+.baner{
+    height: 200px;
+    width: 100%;
+}
+
+.panel-lewy{
+    background-color: #F8C013;
+    text-align: center;
+    height: 600px;
+    width: 30%;
+}
+
+.panel-prawy{
+    background-color: #C2C3C2;
+    text-align: center;
+    color: #886829;
+    height: 560px;
+    width: 70%;
+    padding-top: 40px;
+}
+
+.stopka{
+    background-color: #1A3B98;
+    text-align: center;
+    color: white;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    width: 75%;
+    margin: auto;
+}
+
+.cena-bazowa, #cena-razem{
+    margin-top: 30px;
+    margin-right: 50px;
+    text-align: right;
+}
+
+#cena-razem{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.wycena-tekst{
+    margin-bottom: -15px;
+}
