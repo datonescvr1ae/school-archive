@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Konwerter systemow liczbowych</h1> <br>
+
+        <section class="main-box">
+            Podaj liczbe: <br> <input type="text" id="num" placeholder="Np. 255 lub FF" /> <br>
+            Z systemu: <br>
+            <select id="sys-from">
+                <option value=2>Dwojkowy</option>
+                <option value=4>Czworkowy</option>
+                <option value=8>Osemkowy</option>
+                <option value=10>Dziesietny</option>
+                <option value=16>Szesnastkowy</option>
+            </select> <br>
+
+            Na system: <br>
+            <select id="sys-to">
+                <option value=2>Dwojkowy</option>
+                <option value=4>Czworkowy</option>
+                <option value=8>Osemkowy</option>
+                <option value=10>Dziesietny</option>
+                <option value=16>Szesnastkowy</option>
+            </select> <br>
+
+            <button type="button" id="convert">Konwertuj</button>
+            <p id="result"></p>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
