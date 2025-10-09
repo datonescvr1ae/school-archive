@@ -35,7 +35,7 @@ function onSendClicked() {
 }
 
 function onGenerateClicked() {
-    const randNum = Math.round(Math.random() * responses.length);
+    const randNum = Math.round(Math.random() * (responses.length - 1));
     const message = responses[randNum];
 
     sendMessage(2, message);
