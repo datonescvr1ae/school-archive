@@ -27,7 +27,7 @@ function sendMessage(id, message) {
         chatSection.innerHTML = `${message} <img src='Krzysiek.jpg' alt='Profilowe Jolki'>`;
     }
 
-    chatSection.scrollIntoView()
+    chatSection.scrollIntoView();
 }
 
 function onSendClicked() {
