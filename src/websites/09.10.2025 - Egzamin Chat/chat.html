@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Chat</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+
+    <body class="flex-column">
+        <section class="flex-row">
+            <section class="main-box">
+                <section class="baner">
+                    <h2>Chat</h2>
+                </section>
+
+                <section class="blok-glowny">
+                    <section class="blok-chatu" id="chat-block">
+                        <section class="wypowiedz jolanta">
+                            <img src="Jolka.jpg" alt="Profilowe Jolki">
+                            Czesc idziesz jutro do kina?
+                        </section>
+                        <section class="wypowiedz krzysiek">
+                            Tak! A ty?
+                            <img src="Krzysiek.jpg" alt="Profilowe Krzyska">
+                        </section>
+                    </section>
+
+                    Wpisz wiadomosc: <input type="text" id="message" />
+                    <button type="button" id="send">Wyslij</button> <br>
+
+                    <button type="button" id="generate-message">Generuj losowa odpowiedz</button>
+                </section>
+            </section>
+
+            <section class="blok-boczny">
+                <h3>Chaty</h3>
+                <ul>
+                    <li>Ogolny</li>
+                    <li>
+                        Tematyczne
+                        <ol>
+                            <li>Turystyczny</li>
+                            <li>Zeglarski</li>
+                            <li>Filatelistyczny</li>
+                            <li>Hodowla zwierzatek domowych</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <h3>Uczestnicy</h3>
+                <p>Jolanta Nowak</p>
+                <img src="Jolka.jpg" alt="Jolanta Nowak">
+
+                <p>Krzysztof Lukasinski</p>
+                <img src="Krzysiek.jpg" alt="Krzysztof Lukasinski">
+            </section>
+        </section>
+
+        <section class="stopka">
+            <h5>Chat wykonal: Mateusz Cieslinski</h5>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

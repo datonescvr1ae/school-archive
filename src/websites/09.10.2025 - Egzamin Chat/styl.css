@@ -1,0 +1,97 @@
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-box{
+    width: 80%;
+    margin-bottom: -20px;
+}
+
+*{
+    font-family: Garamond;
+}
+
+.baner{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blok-glowny{
+    height: 600px;
+}
+
+.blok-boczny{
+    background-color: coral;
+    width: 20%;
+    height: 680px;
+}
+
+.stopka{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
+.blok-chatu{
+    border: 1px solid tomato;
+    margin: 15px;
+    height: 470px;
+    overflow: scroll;
+}
+
+img{
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    width: 70px;
+    height: 70px;
+}
+
+.wypowiedz{
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+}
+
+.jolanta{
+    background-color: #EEE;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.krzysiek{
+    background-color: #CCC;
+    text-align: right;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+button{
+    background-color: tomato;
+    border: 1px solid darkred;
+    padding: 5px;
+    font-weight: bold;
+}
+
+input{
+    width: 500px;
+}
