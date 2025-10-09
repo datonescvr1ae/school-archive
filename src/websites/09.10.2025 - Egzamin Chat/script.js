@@ -26,6 +26,8 @@ function sendMessage(id, message) {
         chatSection.className = "wypowiedz krzysiek";
         chatSection.innerHTML = `${message} <img src='Krzysiek.jpg' alt='Profilowe Jolki'>`;
     }
+
+    chatSection.scrollIntoView()
 }
 
 function onSendClicked() {
