@@ -1,0 +1,59 @@
+1. select opis, cena, dostepnosc from podzespoly where cena < 500
+
+2. select producenci.nazwa, opis from podzespoly inner join producenci on podzespoly.producent_id = producenci.id where dostepnosc = 0
+
+3. select typ_id, avg(cena) as SredniaCena from podzespoly group by typ_id
+
+4. select typy.nazwa, count(*) as LiczbaDostepnych from podzespoly inner join typy on typy.id = podzespoly.typ_id where dostepnosc = 1 group by typy.nazwa
+
+5. select producenci.nazwa, count(*) as LiczbaPodzespolow from podzespoly inner join producenci on producenci.id = podzespoly.producent_id group by producenci.nazwa order by LiczbaPodzespolow desc
+
+6. insert into producenci values(4, 'Gigabyte', 'Tajwan')
+
+7. insert into podzespoly values(6, 4, 1, 'Gigabyte Ryzen 775800X3D', 1600.00, 1)
+
+8. alter table producenci add column priorytet int default 0
+
+9. select opis, cena from podzespoly where opis like '%XPG%' order by cena asc
+
+10. delete from producenci where id not in (select distinct producent_id from podzespoly)
+
+============================================================================================================
+
+1.1. create table zamowienia (
+    id int primary key auto_increment,
+    data_zamowienia date not null,
+    klient_nazwa varchar(100) not null,
+    status enum('nowe', 'w_trakcie', 'zrealizowane')
+)
+
+1.2. create table zamowienia_podzespoly (
+    id int primary key auto_increment,
+    zamowienie_id int not null,
+    podzespol_id int not null,
+    foreign key (zamowienie_id) references zamowienia(id),
+    foreign key (podzespol_id) references podzespoly(id),
+    ilosc int not null
+)
+
+1.3. alter table podzespoly add column stan_magazynowy int default 0
+
+2. select nazwa as Producent, cena * ilosc as WartoscZamowien from producenci inner join podzespoly on podzespoly.producent_id = producenci.id inner join zamowienia_podzespoly on zamowienia_podzespoly.podzespol_id = podzespoly.id where stan_magazynowy > 0 group by nazwa
+
+3.1. create or replace view vw_dostepne_podzespoly as select podzespoly.id, opis, cena, stan_magazynowy, producenci.nazwa as Producent, typy.nazwa as Typ from podzespoly inner join producenci on producenci.id = podzespoly.producent_id inner join typy on typy.id = podzespoly.typ_id where dostepnosc = 1 and stan_magazynowy > 10
+
+3.2. grant select on sklep.vw_dostepne_podzespoly to 'u_egzamin'@'localhost'
+
+4. 
+
+5. [plik do tego zadania ma nazwe zad5.php]
+
+6. 
+
+7. 
+
+8. 
+
+9. 
+
+10. 
