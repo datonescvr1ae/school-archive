@@ -1,0 +1,59 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    font-family: Verdana;
+}
+
+.lewy-header, .prawy-header{
+    background-color: seagreen;
+    color: white;
+    line-height: 150px;
+    height: 260px;
+    font-size: 160%;
+}
+
+.lewy-header{
+    width: 75%;
+}
+
+.prawy-header{
+    width: 25%;
+    text-align: right;
+}
+
+main{
+    background-color: mintcream;
+    padding: 80px;
+}
+
+.lewy-footer, .prawy-footer{
+    background-color: seagreen;
+    color: white;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+}
+
+input{
+    margin: 20px;
+}
+
+img{
+    box-shadow: 15px 15px 10px dimgray;
+}
+
+a{
+    text-decoration: none;
+    background-color: mintcream;
+    color: seagreen;
+    padding: 15px;
+    line-height: 70px;
+}

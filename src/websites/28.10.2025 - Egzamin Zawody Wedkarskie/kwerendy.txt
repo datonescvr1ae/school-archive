@@ -1,0 +1,7 @@
+1. insert into zawody_wedkarskie values(null, 2, 4, '2021-09-28', 'Andrzej Nowak')
+
+2. select id, data_zawodow from zawody_wedkarskie where sedzia like "Krzysztof Dobrowolski"
+
+3. select imie, nazwisko, punkty from karty_wedkarskie inner join zawody_wedkarskie on karty_wedkarskie.id = zawody_wedkarskie.Karty_wedkarskie_id where zawody_wedkarskie.id = 4
+
+4. UPDATE karty_wedkarskie SET punkty = punkty + 2 where id = 1
