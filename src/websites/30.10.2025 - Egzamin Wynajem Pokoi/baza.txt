@@ -1,0 +1,23 @@
+1. create table pokoje(
+    id int,
+    nazwa varchar(20),
+    cena float
+)
+
+2. alter table pokoje modify column id int primary key auto_increment
+
+3.1. insert into pokoje values(null, 'jednoosobowy', 100)
+
+3.2. insert into pokoje values(null, 'dwuosobowy', 170)
+
+3.3. insert into pokoje values(null, 'trzyosobowy', 210)
+
+4. alter table rezerwacje add id_pok foreign key (id_pok) references pokoje(id)
+
+5. select id_pok, sum(liczba_dn) from rezerwacje group by id_pok
+
+6. select sum(liczba_dn) from rezerwacje where sezon = "lato"
+
+7. update pokoje set cena = cena * 1.15
+
+8. create user 'najemca'@'localhost' identified by 'n@JEM1@!'

@@ -1,0 +1,61 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    color: white;
+    text-align: center;
+    height: 370px;
+}
+
+.blok-info{
+    color: white;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.blok-info:hover{
+    border-color: white;
+}
+
+main{
+    background-color: whitesmoke;
+    height: 50px;
+}
+
+.blok-lewy{
+    background-color: whitesmoke;
+    width: 70%;
+    height: 230px;
+}
+
+.blok-prawy{
+    background-color: whitesmoke;
+    width: 30%;
+    height: 230px;
+    text-align: right;
+}
+
+body{
+    font-family: Tahoma;
+    background-color: crimson;
+}
+
+h2{
+    text-align: center;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+}
+
+.blok-mecze{
+    margin-top: 10px;
+}
