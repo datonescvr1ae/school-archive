@@ -27,7 +27,7 @@
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo "<section class='opona'>";
 
-                        echo "<img src='" . $sezonLookup[$row["sezon"]] . ".png'>";
+                        echo "<img src='" . $sezonLookup[$row["sezon"]] . ".png' alt='gdzie jest obrazek?'>";
                         echo "<h4>Opona: " . $row["producent"] . " " . $row["model"] . "</h4>";
                         echo "<h3> Cena: " . $row["cena"] . "</h3>";
 
