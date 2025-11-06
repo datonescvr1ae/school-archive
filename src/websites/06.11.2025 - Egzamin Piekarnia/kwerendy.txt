@@ -1,0 +1,7 @@
+1. select Rodzaj, Nazwa, Gramatura, Cena from wyroby where Rodzaj = "INNE"
+
+2. select distinct Rodzaj from wyroby order by Rodzaj desc
+
+3. select ID, Nazwa from wyroby where Nazwa like "%Chałka%"
+
+4. select Rodzaj, round(avg(Cena), 2) as 'Średnia cena' from wyroby group by Rodzaj
