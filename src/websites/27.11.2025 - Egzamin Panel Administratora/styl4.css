@@ -1,0 +1,41 @@
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    font-family: Helvetica;
+}
+
+h3{
+    margin: 0px;
+}
+
+header, footer{
+    background-color: #AF4448;
+    color: white;
+    text-align: center;
+    height: 20px;
+}
+
+.blok-lewy, .blok-prawy{
+    background-color: #FFA4A2;
+    height: 650px;
+    width: 50%;
+}
+
+h4{
+    margin: 0px;
+}
+
+input[type="submit"]{
+    background-color: #AF4448;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}
