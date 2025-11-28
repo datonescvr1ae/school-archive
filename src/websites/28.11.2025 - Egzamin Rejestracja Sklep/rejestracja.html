@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Sklep - rejestracja</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+
+    <body class="flex-column">
+        <section class="flex-row">
+            <aside>
+                <img src="obraz.png" alt="promocje">
+                <h2>Sprawdz promocje</h2>
+
+                <table>
+                    <tr>
+                        <th>co?</th>
+                        <th>ile taniej?</th>
+                    </tr>
+
+                    <tr>
+                        <td>ubrania</td>
+                        <td>15%</td>
+                    </tr>
+
+                    <tr>
+                        <td>buty</td>
+                        <td>25%</td>
+                    </tr>
+                </table>
+            </aside>
+        
+            <section class="flex-column main-content">
+                <header>
+                    <h1>Zarejestruj sie w sklepie</h1>
+                </header>
+
+                <main>
+                    <input type="button" id="client-button" value="Klient">
+                    <input type="button" id="address-button" value="Adres">
+                    <input type="button" id="contact-button" value="Kontakt">
+
+                    <section class="first-block" id="section-1">
+                        <p>Imie:</p> <input type="text" placeholder="Wpisz dane..." id="first-name">
+                        <p>Nazwisko:</p> <input type="text" id="last-name">
+                        <p>Data urodzenia:</p> <input type="date" id="birth-date">
+                    </section>
+
+                    <section class="second-block" id="section-2">
+                        <p>Ulica</p> <input type="text" id="road">
+                        <p>Numer:</p> <input type="number" id="house-number">
+                        <p>Miasto:</p> <input type="text" id="city">
+                    </section>
+
+                    <section class="third-block" id="section-3">
+                        <p>Numer komorkowy:</p> <input type="tel" id="phone-number">
+                        <input type="checkbox" id="accepts-rodo" name="accepts-rodo"> <label for="accepts-rodo">Akceptuje RODO</label>
+
+                        <input type="button" id="confirm-button" value="Zatwierdz dane">
+                    </section>
+                </main>
+
+                <section class="progress-bar">
+                    <section class="progress-bar-inside" id="progress-bar"></section>
+                </section>
+            </section>
+        </section>
+
+        <footer>
+            <h4>Rejestracje do sklepu wykonal: Mateusz Cieslinski</h4>
+        </footer>
+    </body>
+
+    <script src="script.js"></script>
+</html>

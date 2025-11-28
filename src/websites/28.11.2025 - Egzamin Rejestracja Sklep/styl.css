@@ -1,0 +1,90 @@
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+*{
+    font-family: Cambria;
+}
+
+body{
+    background-color: linen;
+}
+
+aside, header, footer{
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}
+
+aside{
+    width: 25%;
+    height: 510px;
+    margin: 0 1% 0 1%;
+    box-shadow: 4px 4px 5px dimgray;
+}
+
+header{
+    width: 73%;
+    height: 80px;
+}
+
+main{
+    width: 73%;
+    height: 400px;
+}
+
+input[type = "button"]{
+    background-color: steelblue;
+    color: white;
+    width: 20%;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 130%;
+    border: none;
+}
+
+input[type = "button"]:hover{
+    background-color: navy;
+}
+
+.first-block, .second-block, .third-block{
+    background-color: lightblue;
+    margin-right: 80px;
+    padding: 10px;
+    display: none;
+}
+
+.first-block{
+    display: block;
+}
+
+.progress-bar{
+    background-color: lightgrey;
+    width: 73%;
+    margin-bottom: 10px;
+}
+
+.progress-bar-inside{
+    background-color: navy;
+    width: 4%;
+    height: 30px;
+}
+
+table{
+    width: 100%;
+    border: 1px dotted navy;
+}
+
+.main-content{
+    width: 100%;
+}
+
+.progress-bar, main, header{
+    width: 100%;
+}
